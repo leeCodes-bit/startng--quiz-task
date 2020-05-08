@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="question-number">
+            <h3>Question <span class="question-num-value"></span> of <span class="total-question"></span></h3>
+        </div>
+        <div id="question-container" class="hide">
+            <div id="question"></div>        
+        <div class="answer-btn options" id="answer-buttons">
+            <button id="0" class="btn option1" onclick="check(this)"></button>
+            <button id="1" class="btn option2" onclick="check(this)"></button>
+            <button id="2" class="btn option3" onclick="check(this)"></button>
+            <button id="3" class="btn option4" onclick="check(this)"></button> 
+        </div>
+        </div>
+        <div class=" controls button">
+            <!-- <button class="start-btn btn" id="start-btn">Start</button> -->
+            <button type="button" class="next-btn btn hide" id="next-btn" onclick="next()">Next</button>
+            <!-- <button class="end-btn hide">End</button> -->
+        </div>
+        <div class="answers-tracker">
+         
+        </div>
+    </div>
+    <div class="quiz-over">
+        <div class="box">
+        <h2>You got <span class="correct-answers"></span> out of <span class="total-question2"> </span> questions correctly! <br>
+             That's <span class="percentage"> </span></h2>
+         <button type="button" onclick="tryAgain()">Try Again</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
